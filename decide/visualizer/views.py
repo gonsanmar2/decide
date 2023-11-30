@@ -5,6 +5,16 @@ from django.http import Http404
 
 from base import mods
 
+from django.test import TestCase
+from base.tests import BaseTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+
+from voting.models import Voting, Question
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+import time
 
 class VisualizerView(TemplateView):
     template_name = 'visualizer/visualizer.html'

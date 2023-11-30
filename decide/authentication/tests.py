@@ -5,7 +5,13 @@ from rest_framework.test import APITestCase
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 
+from base.tests import BaseTestCase
+
 from base import mods
+
+class SimpleTest(BaseTestCase):
+    def test_basic_addition(self):
+        self.assertEqual(1 + 1, 2)
 
 
 class AuthTestCase(APITestCase):

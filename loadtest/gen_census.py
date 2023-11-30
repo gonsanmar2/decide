@@ -2,10 +2,10 @@ import json
 import requests
 
 
-HOST = "http://localhost:8000"
-USER = "admin"
-PASS = "admin"
-VOTING = 1
+HOST = "http://localhost:8080"
+USER = "gonzalo"
+PASS = "vivaerbeti"
+VOTING = 3
 
 
 def create_voters(filename):
